@@ -1,9 +1,10 @@
-const usernameEl = document.querySelector("#username");
-const titleEl = document.querySelector("#title");
-const contentEl = document.querySelector("#content");
-const submitEl = document.querySelector("#submit");
+const usernameEl = document.getElementById("username");
+const titleEl = document.getElementById("title");
+const contentEl = document.getElementById("content");
+const submitEl = document.getElementById("submit");
 
-submitEl.addEventListener("submit", function () {
+submitEl.addEventListener("click", function (event) {
+  event.preventDefault();
   if (usernameEl.value && titleEl.value && contentEl.value) {
     const blogEntry = {
       username: usernameEl.value,
@@ -11,8 +12,10 @@ submitEl.addEventListener("submit", function () {
       content: contentEl.value,
     };
 
+    console.log(blogEntry);
+
     let blogPostObject;
-    if (localStorage.getitem("blogPost")) {
+    if (localStorage.getItem("blogPost")) {
       blogPostObject = JSON.parse(localStorage.getItem("blogPost"));
     } else {
       blogPostObject = [];
@@ -22,7 +25,7 @@ submitEl.addEventListener("submit", function () {
     usernameEl.textContent = "";
     titleEl.textContent = "";
     contentEl.textContent = "";
-    window.location.href = "blog.html";
+    window.location.href = "./blog.html";
   } else {
     alert("No field can be empty!");
   }
