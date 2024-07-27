@@ -47,7 +47,7 @@ If your README is long, add a table of contents to make it easy for users to fin
 
 ![alt text](./assets/images/portfolio-link.png)
 
-## Appliation
+## Application
 
 ### Deployed Application URL: https://karapoole.github.io/Kara-Poole-Blog/index.html
 
