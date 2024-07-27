@@ -1,0 +1,63 @@
+:root {
+  --light: white;
+  --dark: black;
+}
+
+* {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: var(--light);
+}
+
+/* styles submit button */
+button {
+  padding: 10px;
+  margin: 24px;
+  cursor: pointer;
+  font-size: 24px;
+  background-color: #0a8f8c;
+  color: white;
+}
+
+/* background color on input boxes */
+input {
+  background-color: var(--light);
+}
+
+/* unsure of what this does */
+.wrapper {
+  padding-top: 20px;
+}
+
+/* containter around input boxes */
+.container {
+  display: block;
+  margin: 40px auto;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 90vw;
+  background-color: #608453;
+}
+
+/* creates margin ablove "welcome to my blog" text */
+.card-contents {
+  padding: 5px 5px 30px 5px;
+}
+
+#username,
+#title,
+#submit,
+#content {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 20px;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+#response {
+  padding-bottom: 30px;
+}
